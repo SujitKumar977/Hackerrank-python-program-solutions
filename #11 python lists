@@ -1,0 +1,43 @@
+Sample Input 0
+
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+
+Sample Output 0
+
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]
+
+ANS:
+
+N = int(input())
+L = []
+for i in range(0, N):
+    tokens = input().split()
+
+    if tokens[0] == 'insert':
+        L.insert(int(tokens[1]), int(tokens[2]))
+    elif tokens[0] == 'print':
+        print(L)
+    elif tokens[0] == 'remove':
+        L.remove(int(tokens[1]))
+    elif tokens[0] == 'append':
+        L.append(int(tokens[1]))
+    elif tokens[0] == 'sort':
+        L.sort()
+    elif tokens[0] == 'pop':
+        L.pop()
+    elif tokens[0] == 'reverse':
+        L.reverse()
