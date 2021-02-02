@@ -1,0 +1,17 @@
+Sample Input
+
+9
+29
+7
+27
+
+Sample Output
+
+4710194409608608369201743232  
+ANS:
+A = int(input())
+B = int(input())
+C = int(input())
+D = int(input())
+
+print((A**B)+(C**D))
