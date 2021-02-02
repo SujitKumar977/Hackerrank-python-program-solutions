@@ -1,3 +1,4 @@
+ Example 1
 Sample Input
 
 10
@@ -22,3 +23,79 @@ Output = int(round(math.degrees(math.acos(adj/H))))
 Output = str(Output)
 
 print(Output+"°")
+
+
+
+Example 2
+
+TRIANGLE QUEST2
+Sample Input
+
+5
+
+Sample Output
+
+1
+121
+12321
+1234321
+123454321
+
+ANS:
+for i in range(1,int(input())+1):
+print(((10**i-1)//(9))**2)
+
+
+Example 3
+
+Triangle quest 1
+Sample Input :
+5
+Sample Output :
+
+1
+22
+333
+4444
+
+ANS:
+for i in range(1,int(input())):
+print(int(i * 10**i // 9))
+
+
+
+Example 4:
+Python Mod divmod
+Sample Input :
+177
+10
+Sample Output :
+17
+7
+(17, 7)
+ANS:
+a = int(input());
+b = int(input());
+print(a//b);
+print(a%b);
+print(divmod(a,b));
+
+
+
+Example 5:
+Python power-mod power
+Sample Input
+3
+4
+5
+Sample Output
+81
+1
+ANS:
+a=int(input())
+b=int(input())
+c=int(input())
+print(pow(a,b))
+print(pow(a,b,c))
+
+
