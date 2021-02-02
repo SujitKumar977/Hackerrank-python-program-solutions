@@ -1,0 +1,17 @@
+Sample Input
+
+  1+2j
+
+Sample Output
+
+ 2.23606797749979 
+ 1.1071487177940904
+
+ANS:
+import cmath;
+
+num = complex(input())
+z = complex(num)
+
+print(cmath.polar(z)[0])
+print(cmath.polar(z)[1])
