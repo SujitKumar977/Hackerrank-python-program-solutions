@@ -1,0 +1,130 @@
+Example 1:
+Python set.union() opertors:
+Sample Input :
+9
+1 2 3 4 5 6 7 8 9
+9
+10 1 2 3 11 21 55 6 8
+
+Sample Output :
+13
+ANS:
+N1 = int(input())
+storage1 = set(input().split());
+
+N2 = int(input())
+storage2 = set(input().split());
+
+storage3 = storage1.union(storage2)
+
+print(len(storage3))
+
+Example 2:
+
+Python set.intersection
+Sample Input
+9
+1 2 3 4 5 6 7 8 9
+9
+10 1 2 3 11 21 55 6 8
+
+Sample Output
+5
+Ans:
+N1 = int(input())
+storage1 = set(input().split())
+
+N2 = int(input())
+storage2 = set(input().split())
+
+storage3 = storage2.intersection(storage1)
+
+print(len(storage3))
+
+Examples 3
+
+Python set.difference
+Sample Input
+9
+1 2 3 4 5 6 7 8 9
+9
+10 1 2 3 11 21 55 6 8
+
+Sample Output
+4
+ANS:N1 = int(input())
+NUM1 = set(map(int,input().split())) 
+N2 = int(input())
+NUM2 = set(map(int,input().split()))
+print(len(NUM1 - NUM2)
+
+Example 4
+Set .symmetric_difference() Operation
+
+Sample Input
+
+9
+1 2 3 4 5 6 7 8 9
+9
+10 1 2 3 11 21 55 6 8
+
+Sample Output
+8
+
+ANS:
+N1 = int(input())
+storage1 = set(input().split())
+
+N2 = int(input())
+storage2 = set(input().split())
+
+storage3 = storage1.symmetric_difference(storage2)
+
+print(len(storage3))
+
+Example 5
+
+Python set mutation
+
+Sample Input
+
+ 16
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 24 52
+ 4
+ intersection_update 10
+ 2 3 5 6 8 9 1 4 7 11
+ update 2
+ 55 66
+ symmetric_difference_update 5
+ 22 7 35 62 58
+ difference_update 7
+ 11 22 35 55 58 62 66
+
+Sample Output
+
+38
+ANS:
+len_set = int(input())
+
+storage = set(map(int, input().split()))
+
+op_len = int(input())
+
+for i in range(op_len):
+    operation = input().split()
+    if operation[0] == 'intersection_update':
+        temp_storage = set(map(int, input().split()))
+        storage.intersection_update(temp_storage)
+    elif operation[0] == 'update':
+        temp_storage = set(map(int, input().split()))
+        storage.update(temp_storage)
+    elif operation[0] == 'symmetric_difference_update':
+        temp_storage = set(map(int, input().split()))
+        storage.symmetric_difference_update(temp_storage)
+    elif operation[0] == 'difference_update':
+        temp_storage = set(map(int, input().split()))
+        storage.difference_update(temp_storage)
+    else :
+        assert False
+
+print(sum(storage))
